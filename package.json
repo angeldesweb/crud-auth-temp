@@ -1,0 +1,42 @@
+{
+  "name": "bible-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon  --exec npx babel-node src/index.js",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeldesweb/bible-api.git"
+  },
+  "author": "Ángel Zamora <angeldesweb>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angeldesweb/bible-api/issues"
+  },
+  "homepage": "https://github.com/angeldesweb/bible-api#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "dotenv": "^16.0.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.6",
+    "morgan": "^1.10.0"
+  }
+}
