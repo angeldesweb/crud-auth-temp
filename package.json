@@ -1,5 +1,5 @@
 {
-  "name": "bible-api",
+  "name": "crud-template",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angeldesweb/bible-api.git"
+    "url": "git+https://github.com/angeldesweb/crud-auth-temp.git"
   },
   "author": "Ángel Zamora <angeldesweb>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/angeldesweb/bible-api/issues"
+    "url": "git+https://github.com/angeldesweb/crud-auth-temp/issues"
   },
-  "homepage": "https://github.com/angeldesweb/bible-api#readme",
+  "homepage": "git+https://github.com/angeldesweb/crud-auth-temp#readme",
   "devDependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.5",
