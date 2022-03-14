@@ -25,7 +25,8 @@ export const readById = async (_id,model,path,fields) => {
         let doc;
         if(!!path && !!fields) doc = await model.findById(_id).select(path).populate(fields);
         if(!!path && !fields) doc = await model.findById(_id).select(path);
-        if(!path && !!fields) doc = await model.findById(_id); 
+        if(!path && !!fields) doc = await model.findById(_id).populate(fields);
+        if(!path && !fields) doc = await model.findById(_id); 
         return doc;
     } catch (error) {
         throw error;

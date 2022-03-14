@@ -1,5 +1,5 @@
 {
-  "name": "crud-template",
+  "name": "crud-templa",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -16,9 +16,9 @@
   "author": "Ángel Zamora <angeldesweb>",
   "license": "MIT",
   "bugs": {
-    "url": "git+https://github.com/angeldesweb/crud-auth-temp/issues"
+    "url": "https://github.com/angeldesweb/crud-auth-temp/issues"
   },
-  "homepage": "git+https://github.com/angeldesweb/crud-auth-temp#readme",
+  "homepage": "https://github.com/angeldesweb/crud-auth-temp#readme",
   "devDependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.5",

@@ -24,9 +24,9 @@ export const signIn = async (req,res,next) => {
         if(!user) return next(Forbbiden(`${username} no existe en la base de datos.`));
         
         const pass = await checkPassword(password,user.password);
-        if(!pass) return next(Authorization('Contraseña inválida'));
-
-        const token = createToken(user);
+        if(!pass) return next(Authorization('Contraseña inválida'));    
+        const sessionUser = await readById(user._id,User,null,null);
+        const token = createToken(sessionUser);
         const old = await upd(user._id,User,{lastlogin:Date.now()});
 
         return res.status(200).send({sucess:true,user:user._id,token,lastsession:old.lastlogin});

@@ -1,14 +1,14 @@
 import jwt from 'jsonwebtoken';
 import moment from 'moment';
-import { Authorization, Forbbiden } from './errors';
+import { Forbbiden } from './errors';
 
 
-export const createToken = (user,next) => {
+export const createToken = (user) => {
     const secret = process.env.SECRET;
     const payload = {
         sub:user._id,
         role:user.role,
-        exp:moment.utc().add(15,'minutes').valueOf()
+        exp:moment.utc().add(30,'seconds').valueOf()
     };
     try {
         const resp = jwt.sign(payload,secret,{algorithm:'HS256'});
